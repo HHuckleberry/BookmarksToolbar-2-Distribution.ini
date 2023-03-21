@@ -33,7 +33,6 @@ function collectSite($b){
     }
 }
 
-
 function collectFolder($a){
     $itemRoot = "BookmarksFolder-"+$folderCount
     write-host $itemRoot -ForegroundColor red
