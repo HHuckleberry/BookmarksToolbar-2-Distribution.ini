@@ -1,6 +1,7 @@
 
 #powershell script to convert favorites bookmarks to distribution.ini
-$jsonData = Get-Content -Raw /Users/mccrackent/Documents/VM/sharedFolders/bookmarks-2023-03-20.json | ConvertFrom-Json
+$filePath = $pwd.path+"/bookmarks-2023-03-20.json"
+$jsonData = Get-Content -Raw $filePath | ConvertFrom-Json
 #typecode 1=site, 2=folder
 
 
